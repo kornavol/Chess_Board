@@ -7,9 +7,11 @@ section {
 ul {
     width: 88vw;
     height: 88%;
+    /* HOW FIX A HEIGHT */
     text-align: center;
     display: block;
     list-style-type: none;
+    /* Relate to flip */
     perspective: 1000px;
 }
 
@@ -22,7 +24,7 @@ li {
     border: solid 1px black;
     float: left;
     
-
+    /* Relate to flip */
     transition: transform 0.6s;
     transform-style: preserve-3d;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -30,7 +32,7 @@ li {
     background-color: transparent;;
 }
 
-
+/* Backround */
 ul:nth-of-type(odd) > li:nth-of-type(odd) {
 background-image: linear-gradient(#FDFCFB, #E2D1C3);
 color: black;
@@ -54,12 +56,13 @@ ul:nth-of-type(even) > li:nth-of-type(even)   {
 }
 
 
-ul:nth-of-type(1) > li:nth-of-type(odd)> div:nth-of-type(1) {
+/* ul:nth-of-type(1) > li:nth-of-type(odd)> div:nth-of-type(1) {
     background-image: linear-gradient(#FDFCFB, #E2D1C3);
     color: black;
-}
+} */
 
-/* Have problem with coma */
+   /* 4 lower  blocks has relate to flip (all parameters)*/
+/* Have problem with coma, they should be in one block */
 ul:nth-of-type(1) li:hover  {
     transform: rotateY(180deg);
 }
@@ -67,7 +70,8 @@ ul:nth-of-type(2) li:hover  {
     transform: rotateY(180deg);
 }
 
-/* Have problem with coma */
+
+/* Have problem with coma, they should be in one block */
 ul:nth-of-type(7) li:hover  {
     transform: rotateY(180deg);
 }
@@ -75,8 +79,8 @@ ul:nth-of-type(8) li:hover  {
     transform: rotateY(180deg);
 }
 
-/* Have problem with coma */
-
+   /* 2 lower  blocks has relate to flip (all parameters)*/
+/* Have problem with coma, they should be in one block */
 div:nth-of-type(1) {
       position: absolute;
       width: 100%;
@@ -96,6 +100,7 @@ div:nth-of-type(1) {
     color: black;
 }
     
+/* Relate to flip */
 div:nth-of-type(2) {
       background-color: #2980b9;
       color: white;
